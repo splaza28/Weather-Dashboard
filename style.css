@@ -1,0 +1,126 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  .header {
+    color: white;
+    background-color: navy;
+    background: linear-gradient(to left, rgb(4, 41, 100) 0%, #4359bb 100%);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:25px;
+  }
+  
+  .side-bar {
+    width: 22%;
+    height: 88vh;
+    background: #ecf0f1;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  
+  .side-bar h1 {
+    padding-bottom: 10px;
+  }
+  
+  .search-bar button {
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: #0984e3;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .search-history p {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    background: #bdc3c7;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .search-history {
+    padding-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .info-container {
+    width: 78%;
+    padding: 20px;
+  }
+  
+  .main-info {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 30px 30px 30px;
+  }
+  
+  .card {
+    background: #2c3e50;
+    width: 170px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .forecast {
+    padding-top: 20px;
+  }
+  
+  .forcast h1 {
+    padding-bottom: 10px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon h1 {
+    padding-right: 10px;
+  }
+  
+  #card-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box-flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  
+  .box-flex img {
+    width: 23px;
+    padding-left: 5px;
+  }
+  

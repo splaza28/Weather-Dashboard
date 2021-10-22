@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Weather Dashboard</title>
+</head>
+
+<body>
+	<section>
+		<div class="header">
+			<h1>Weather Dashboard</h1>
+		</div>
+
+		<section class="container">
+		<!--sidebar-->
+			<div class="side-bar">
+				<h1>Search for a city:</h1>
+
+				<div class="search-bar">
+					<input id="city" placeholder="Enter City" type="text" /> <br>
+					<button onclick="handleSearch()">Search</button>
+				</div>
+
+				<div class="search-history" id="history"></div>
+			</div>
+
+			<!-- WEATHER FORCAST SECTION -->
+			<div class="info-container">
+				<div class="main-info">
+					<div class="icon">
+						<h1 id="name">Name</h1>
+						<h1 id="date">(-/--/----)</h1>
+						<img id="icon" />
+					</div>
+
+					<div class="box-flex">
+						<p id="temp">Temprature: -- °F</p>
+					</div>
+
+					<div class="box-flex">
+						<p id="wind">Wind: -- MPH</p>
+					</div>
+
+					<div class="box-flex">
+						<p id="humi">Humidity: -- %</p>
+					</div>
+
+					<p>UV Index: <span id="uvindex">--</span></p>
+				</div>
+
+				<div class="forecast">
+					<h1>5-Day Forecast:</h1>
+					<div id="card-box"></div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
