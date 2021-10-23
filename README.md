@@ -14,4 +14,4 @@ The Weather Dashboard application allows the search of weather conditions for an
 ### **Links**:
 * GitHub Repository- https://github.com/splaza28/Weather-Dashboard.git
 
-* Application URL-hhttps://splaza28.github.io/Weather-Dashboard/
+* Application URL- https://splaza28.github.io/Weather-Dashboard/
