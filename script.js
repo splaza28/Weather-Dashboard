@@ -1,7 +1,7 @@
 const ApiKey = `74daefb956f8b3dbea0d7f059ab98e7a`;
 const storeCity = [];
 const temp = document.getElementById("temp");
-const humidity = document.getElementById("humi");
+const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("wind");
 const uvIndex = document.getElementById("uvindex");
 const currdate = document.getElementById("date");
@@ -10,7 +10,7 @@ const cardBx = document.getElementById("card-box");
 const cityName = document.getElementById("name");
 const searchHistory = document.getElementById("history");
 
-//format date
+// date
 const formatDate = (getdate) => {
 	const date = new Date(getdate * 1000);
 	const day = date.getDate();
@@ -83,7 +83,7 @@ const renderCityList = () => {
 	}
 };
 
-//FETCH-ONE-CALL-API
+//fetch one call api
 const fetchOneCallApi = async (lat, lon) => {
 	try {
 		const res = await fetch(
@@ -99,7 +99,7 @@ const fetchOneCallApi = async (lat, lon) => {
 	}
 };
 
-//FETCH-CURRENT-WEATHER-API
+//fetch current weather api
 const fetchCurrentWeatherApi = async (city) => {
 	const res = await fetch(
 		`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=Imperial&appid=${ApiKey}`
@@ -114,7 +114,7 @@ const fetchCurrentWeatherApi = async (city) => {
 		if (searchHistory) {
 			const nearrr = [...searchHistory, city]
 
-			//REMOVING DUPLICATE CITY NAME
+			//remove dup city name
 			const uniqueHistory = [...new Set(nearrr)];
 			localStorage.setItem("history", JSON.stringify(uniqueHistory));
 		} else {
@@ -126,8 +126,8 @@ const fetchCurrentWeatherApi = async (city) => {
 	fetchOneCallApi(data.coord.lat, data.coord.lon);
 };
 
-//SEARCH
-const handleSearch = () => {
+//search
+const beginSearch = () => {
 	const search = document.getElementById("city").value;
 	if (!search) {
 		window.alert("Please enter city name!");
